@@ -94,6 +94,17 @@
 					<div class="rdm-lista--icono"><i class="zmdi zmdi-border-top zmdi-hc-2x"></i></div>
 				</div>
 				<div class="rdm-lista--contenedor">
+					<h2 class="rdm-lista--titulo"><a href="toolbar_tabs.php">Toolbar con tabs</a></h2>
+				</div>
+			</div>
+		</article>
+
+		<article class="rdm-lista--item-sencillo">
+			<div class="rdm-lista--izquierda-sencillo">
+				<div class="rdm-lista--contenedor">
+					<div class="rdm-lista--icono"><i class="zmdi zmdi-border-top zmdi-hc-2x"></i></div>
+				</div>
+				<div class="rdm-lista--contenedor">
 					<h2 class="rdm-lista--titulo"><a href="toolbar_inicio.php">Toolbar Inicio</a></h2>
 				</div>
 			</div>
