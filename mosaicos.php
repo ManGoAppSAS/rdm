@@ -16,6 +16,7 @@ else
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Reglas de diseño ManGo! - Mosaico</title>
+	<link rel="stylesheet" href="https://www.mangoapp.co/a-recursos/css/estilos.css">
 	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body <?php echo $body_snack; ?>>
@@ -39,15 +40,34 @@ else
 	
 
 	  <article class="rdm-mosaico--lista">
+	    
+
 	    <section class="rdm-mosaico--item">
 	      <div class="rdm-mosaico--primario">
 	      	<div class="rdm-mosaico--avatar" style="background-image: url(img/1c.jpg);"></div>
 	      </div>
 	      <span class="rdm-mosaico--secundario">
-	        <span class="rdm-mosaico--titulo">Hamburguesa de queso y tocineta</span>
-	        <span class="rdm-mosaico--texto">$ 12.500</span>
+	        <span class="rdm-mosaico--titulo" style="font-size: 1.25em"><b>Paella marinera con almejas</b></span>
+	        <span class="rdm-mosaico--texto" style="font-size: 1em"><b>$ 12.500</b></span>
+	        <button class="rdm-boton--plano">+</button>
+		    <button class="rdm-boton--resaltado">-</button>
 	      </span>
 	    </section>
+
+	    <section class="rdm-mosaico--item">
+	      <div class="rdm-mosaico--primario">
+	      	<div class="rdm-mosaico--avatar" style="background-image: url(img/1c.jpg);"></div>
+	      </div>
+	      <span class="rdm-mosaico--secundario">
+	        <span class="rdm-mosaico--titulo" style="font-size: 1.5em"><b>Paella marinera con almejas</b></span>
+	        <span class="rdm-mosaico--texto" style="font-size: 1.25em"><b>$ 12.500</b></span>
+	        <button class="rdm-boton--primario">+</button>
+		    <button class="rdm-boton--resaltado">-</button>
+	      </span>
+	    </section>
+
+
+
 	    <section class="rdm-mosaico--item">
 	      <div class="rdm-mosaico--primario">
 	        <div class="rdm-mosaico--avatar" style="background-image: url(img/2c.jpg);"></div>

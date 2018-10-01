@@ -12,6 +12,7 @@ $valor = str_replace('.','',$valor);
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Reglas de diseño ManGo! - Tipografias</title>
+	<link rel="stylesheet" href="https://www.mangoapp.co/a-recursos/css/estilos.css">
 	<link rel="stylesheet" href="css/estilos.css">
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"> </script>
  	<script src="https://cdn.jsdelivr.net/autonumeric/2.0.0/autoNumeric.min.js"></script>

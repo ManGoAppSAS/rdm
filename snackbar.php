@@ -16,6 +16,7 @@ else
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Reglas de diseño ManGo! - Tarjetas</title>
+	<link rel="stylesheet" href="https://www.mangoapp.co/a-recursos/css/estilos.css">
 	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body <?php echo $body_snack; ?>>

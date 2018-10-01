@@ -105,7 +105,8 @@ else
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Reglas de diseño ManGo! - Gráficos</title>
-	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="https://www.mangoapp.co/a-recursos/css/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
 
 	<style type="text/css">
     #grafico1 {
@@ -223,14 +224,18 @@ else
                         floating: true,
                         layout: 'vertical',
                         align: 'right',
+
                         verticalAlign: 'middle'
                     },
 
                     tooltip: {
                         valueSuffix: 'mil',
                         backgroundColor: '#f5f5f5',
-                        borderColor: '#999999',
-                        borderRadius: 3,
+                        style: {
+                             color: '#222'
+                          },
+                        borderColor: '#f5f5f5',
+                        borderRadius: 5,
                         borderWidth: 1,
                         crosshairs: true,
                         formatter: function() {

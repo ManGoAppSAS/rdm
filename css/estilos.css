@@ -17,20 +17,29 @@ Autor: Danny Estrada
 @import "facturas.css";
 @import "https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css";
 
+@media print {
+  @page{
+    margin: 0; 
+  }
+}
+
 /*elementos comunes*/
 body{
 	background-color: rgba(0, 0, 0, 0.05);
 	color: #222; /*color de la fuente global: gris muy oscuro*/
-	font-family: 'Roboto', sans-serif, arial; /*fuente*/
+	font-family: Product Sans;
 	font-size: 15px; /*tamaño de la fuente global*/
 	font-weight: 300; /*densidad de la fuente*/
 	margin: 0; /*espacio entre el contenido y el borde*/
+
+	/*espacio entre el contenido y el borde
 	-webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    */
 }
 
 a{
@@ -39,12 +48,6 @@ a{
 	outline: none;
 }
 
-.rdm--contenedor{
-	box-sizing: border-box; /*el padding y margin no incrementan el ancho*/	
-	margin: 0 auto; /*espacio entre el contenido y el borde*/
-	max-width: 600px; /*ancho máximo del menú del contenedor*/
-	width: 95%; /*ancho del contenedor*/
-}
 
 .rdm--contenedor-toolbar, .rdm--contenedor-toolbar-tabs{
 	box-sizing: border-box; /*el padding y margin no incrementan el ancho*/	
@@ -54,8 +57,23 @@ a{
 	margin-top: 4.5rem;	
 }
 
+
+
 .rdm--contenedor-toolbar-tabs{
-	margin-top: 8.5rem;	
+	margin-top: 8.25rem;	
+}
+
+.rdm--contenedor-toolbar, .rdm--contenedor-zona{
+	box-sizing: border-box; /*el padding y margin no incrementan el ancho*/	
+	margin: 0 auto; /*espacio entre el contenido y el borde*/
+	max-width: 600px; /*ancho máximo del menú del contenedor*/
+	width: 95%; /*ancho del contenedor*/
+	margin-top: 4.5rem;	
+}
+
+.rdm--contenedor-zona{	
+	width: 95%; /*ancho del contenedor*/
+	max-width: 80em; /*ancho máximo del menú del contenedor*/
 }
 
 a.ancla{

@@ -11,6 +11,7 @@ Autor: Danny Estrada
     margin: 0 auto;
     margin-bottom: 1em;
     width: 100%;
+    border-radius: 0.5em;
 }
 
 .rdm-lista--porcentaje{
@@ -62,6 +63,7 @@ Autor: Danny Estrada
     display: flex;
     justify-content: space-between;
     padding: 1em;
+    transition: 250ms linear;
 }
 
 .rdm-lista--item-porcentaje{
@@ -95,21 +97,37 @@ Autor: Danny Estrada
 
 .rdm-lista--izquierda-sencillo{
     align-items: center;
+    box-sizing: border-box;    
+
 }
 
 .rdm-lista--contador{
     align-items: center;
-    background-color: #09d261;
+    background-color: #009688;
     border-radius: 50%;
-    box-sizing: border-box;    
+    box-sizing: border-box;
     color: #fff;
     display: inline-flex;
-    font-size: 1em;
-    height: 1.5em;    
+    height: 1.5em;
     justify-content: center;
-    line-height: normal;
     text-align: center;
     width: 1.5em;
+}
+
+.rdm-lista--texto-redondo{
+    font-size: 0.75em; 
+    color: #fff;
+    background-color: #009688;
+    padding: 0em 0.5em;
+    border-radius: 0.5em;
+}
+
+.rdm-lista--texto-contador{
+    font-size: 0.75em; 
+    display: flex;
+    margin: 0;
+    color: #fff;
+    font-weight: bold;
 }
 
 .rdm-lista--texto-resaltado{
@@ -117,13 +135,16 @@ Autor: Danny Estrada
     font-weight: 600;
 }
 
-.rdm-lista--texto-contador{
-    font-size: 0.8em;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    color: #fff;    
-    font-weight: 500;
+.rdm-lista--texto-positivo{
+    color: #009688;
+}
+
+.rdm-lista--texto-negativo{
+    color: #F44336;
+}
+
+.rdm-lista--texto-gris{
+    color: #555;
 }
 
 .rdm-lista--contenedor{
@@ -139,13 +160,35 @@ Autor: Danny Estrada
     width: 2.8em;
 }
 
-.rdm-lista--icono{
-    width: 2.8em;
+.rdm-lista--avatar-color{
+    align-items: center;
+    border-radius: 50%;
+    box-sizing: border-box;    
+    color: rgba(255,255,255,0.8);
+    display: inline-flex;
+    font-size: 1em;
+    justify-content: center;
+    line-height: normal;
     text-align: center;
+    font-weight: bold;
+    height: 2.8em;
+    width: 2.8em;
+    padding: 0em;
 }
 
-.rdm-lista--titulo, .rdm-lista--texto-secundario, .rdm-lista--texto-valor, .rdm-lista--titulo-amplio, .rdm-lista--mensaje, .rdm-lista--texto-secundario-porcentaje, .rdm-lista--titulo-porcentaje, .rdm-lista--texto-unidad{
-    font-size: 1em;
+.rdm-lista--icono{
+    display: table-cell; 
+    height: 2.8em;
+    text-align: center;
+    vertical-align: middle;
+    width: 2.8em;
+    height: 2.8em;
+    width: 2.8em;
+
+}
+
+.rdm-lista--titulo, .rdm-lista--texto-secundario, .rdm-lista--texto-valor, .rdm-lista--titulo-amplio, .rdm-lista--mensaje, .rdm-lista--texto-secundario-porcentaje, .rdm-lista--texto-valor-porcentaje, .rdm-lista--texto-porcentaje, .rdm-lista--titulo-porcentaje, .rdm-lista--texto-unidad{
+    font-size: 1em; 
     font-weight: 400;
     letter-spacing: 0.05em;
     line-height: 1.5em;
@@ -183,10 +226,20 @@ Autor: Danny Estrada
 
 .rdm-lista--titulo-porcentaje{
     margin: 0;
+    font-weight: 600;
 }
 
 .rdm-lista--texto-secundario-porcentaje{
-    color: rgba(0, 0, 0, 0.6);
+    margin: 0;
+}
+
+.rdm-lista--texto-porcentaje{
+    margin: 0;
+}
+
+.rdm-lista--texto-valor-porcentaje{
+    color: #009688;
+    font-weight: 600;
     margin: 0;
 }
 
@@ -211,6 +264,7 @@ Autor: Danny Estrada
 
 .rdm-lista--acciones-linea{
     padding: 0.3em;
+    margin: -0.75em;
     }
 
 .rdm-lista--linea-pocentaje-fondo{

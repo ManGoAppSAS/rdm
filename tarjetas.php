@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Reglas de diseño ManGo! - Tarjetas</title>
+	<link rel="stylesheet" href="https://www.mangoapp.co/a-recursos/css/estilos.css">
 	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -18,6 +19,34 @@
 </header>
 
 <main class="rdm--contenedor-toolbar">
+
+
+	<section class="rdm-tarjeta" style="width: 200px; display: inline-block; ">		
+
+		<div class="rdm-tarjeta--media" style="background-image: url(img/3c.jpg); height: 80px;"></div>
+
+		<div style="background-image: url(img/3c.jpg); background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;">
+
+		<div class="rdm-tarjeta--primario-largo" style="padding: 0.25em; ">			
+			<h2 class="rdm-lista--texto-secundario" style="margin: 0;" >Nombre plato</h2>
+			<h2 class="rdm-lista--texto-valor" style="margin: 0">$ 15.200</h2>
+	  	</div>
+	  	
+
+	  	<div class="rdm-tarjeta--acciones-izquierda">
+		    <button class="rdm-boton--primario">+</button>
+		    <button class="rdm-boton--resaltado">-</button>
+	  	</div>
+
+	  	</div>
+
+	</section>
+
+
+
+
 
 	<section class="rdm-tarjeta">
 

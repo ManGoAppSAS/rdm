@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Reglas de diseño ManGo! - Vacio</title>
-	<link rel="stylesheet" href="css/estilos.css">	
+	<link rel="stylesheet" href="https://www.mangoapp.co/a-recursos/css/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <script type="text/javascript" src="js/push.min.js"></script>
     <script type="text/javascript" src="js/serviceWorker.min.js"></script>
     <script src='https://code.jquery.com/jquery-latest.min.js' type="text/javascript"></script>
@@ -35,6 +36,12 @@
     window.onload = function(){
         Push.Permission.request();
     }
+
+    Push.config({
+        serviceWorker: './service-worker.js', // Sets a custom service worker script
+        fallback: function(payload) {
+        }
+    });
 
     Push.create('Notificación', {
         body: 'Notifación nueva',

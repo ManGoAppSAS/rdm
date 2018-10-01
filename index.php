@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Reglas de diseño ManGo! - Tipografias</title>
+	<link rel="stylesheet" href="https://www.mangoapp.co/a-recursos/css/estilos.css">
 	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -172,6 +173,17 @@
 				</div>
 				<div class="rdm-lista--contenedor">
 					<h2 class="rdm-lista--titulo"><a href="notificaciones.php">Notificaciones</a></h2>
+				</div>
+			</div>
+		</article>
+
+		<article class="rdm-lista--item-sencillo">
+			<div class="rdm-lista--izquierda-sencillo">
+				<div class="rdm-lista--contenedor">
+					<div class="rdm-lista--icono"><i class="zmdi zmdi-comment-text zmdi-hc-2x"></i></div>
+				</div>
+				<div class="rdm-lista--contenedor">
+					<h2 class="rdm-lista--titulo"><a href="dialogos.php">Diálogos</a></h2>
 				</div>
 			</div>
 		</article>

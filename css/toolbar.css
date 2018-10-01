@@ -16,7 +16,7 @@ Autor: Danny Estrada
 }  
 
 .rdm-toolbar--fila, .rdm-toolbar--fila-tab{
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.9);
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -25,10 +25,10 @@ Autor: Danny Estrada
 }  
 
 .rdm-toolbar--fila-tab{
-    background-color: rgba(255,152,0,0.8);
-    color: #000;
+    background-color: rgba(255,255,255,0.9);
+    color: #555;
     justify-content: space-around;
-}   
+}      
 
 .rdm-toolbar--izquierda, .rdm-toolbar--centro, .rdm-toolbar--derecha{
     display: flex;
@@ -66,6 +66,7 @@ Autor: Danny Estrada
 .rdm-toolbar--icono-derecha{    
     text-align: center;
     margin-left: 1em;
+    cursor: pointer;
 }
 
 .rdm-toolbar--titulo, .rdm-toolbar--titulo-centro, .rdm-toolbar--texto-secundario{
