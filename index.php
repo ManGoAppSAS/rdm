@@ -37,6 +37,17 @@
 		<article class="rdm-lista--item-sencillo">
 			<div class="rdm-lista--izquierda-sencillo">
 				<div class="rdm-lista--contenedor">
+					<div class="rdm-lista--icono"><i class="zmdi zmdi-view-carousel zmdi-hc-2x"></i></div>
+				</div>
+				<div class="rdm-lista--contenedor">
+					<h2 class="rdm-lista--titulo"><a href="elevacion.php">Elevación</a></h2>
+				</div>
+			</div>
+		</article>
+
+		<article class="rdm-lista--item-sencillo">
+			<div class="rdm-lista--izquierda-sencillo">
+				<div class="rdm-lista--contenedor">
 					<div class="rdm-lista--icono"><i class="zmdi zmdi-plus-circle zmdi-hc-2x"></i></div>
 				</div>
 				<div class="rdm-lista--contenedor">
