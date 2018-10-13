@@ -177,6 +177,11 @@ Autor: Danny Estrada
     padding: 0em;
 }
 
+.rdm-lista--avatar-texto
+{
+    font-size: 1.5em;
+}
+
 .rdm-lista--icono{
     display: table-cell; 
     height: 2.8em;

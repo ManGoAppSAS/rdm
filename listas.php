@@ -509,42 +509,22 @@
 
 
 
-	<?php 
+	<?php
 
-	$primera_letra = "a";
-    $primera_letra = ord(strtolower($primera_letra[0])) - 96;
+    $nombre = "jose manuel";
+    $id = 15;
 
-    if ($primera_letra == 1) { $avatar_color_fondo = "#F44336"; }
-	if ($primera_letra == 2) { $avatar_color_fondo = "#E91E63"; }
-	if ($primera_letra == 3) { $avatar_color_fondo = "#9C27B0"; }
-	if ($primera_letra == 4) { $avatar_color_fondo = "#FF1744"; }
-	if ($primera_letra == 5) { $avatar_color_fondo = "#F50057"; }
-	if ($primera_letra == 6) { $avatar_color_fondo = "#D500F9"; }
-	if ($primera_letra == 7) { $avatar_color_fondo = "#673AB7"; }
-	if ($primera_letra == 8) { $avatar_color_fondo = "#3F51B5"; }
-	if ($primera_letra == 9) { $avatar_color_fondo = "#2196F3"; }
-	if ($primera_letra == 10) { $avatar_color_fondo = "#651FFF"; }
-	if ($primera_letra == 11) { $avatar_color_fondo = "#3D5AFE"; }
-	if ($primera_letra == 12) { $avatar_color_fondo = "#2979FF"; }
-	if ($primera_letra == 13) { $avatar_color_fondo = "#01579B"; }
-	if ($primera_letra == 14) { $avatar_color_fondo = "#006064"; }
-	if ($primera_letra == 15) { $avatar_color_fondo = "#009688"; }
-	if ($primera_letra == 16) { $avatar_color_fondo = "#004D40"; }
-	if ($primera_letra == 17) { $avatar_color_fondo = "#0091EA"; }
-	if ($primera_letra == 18) { $avatar_color_fondo = "#43A047"; }
-	if ($primera_letra == 19) { $avatar_color_fondo = "#689F38"; }
-	if ($primera_letra == 20) { $avatar_color_fondo = "#827717"; }
-	if ($primera_letra == 21) { $avatar_color_fondo = "#EF6C00"; }
-	if ($primera_letra == 22) { $avatar_color_fondo = "#795548"; }
-	if ($primera_letra == 23) { $avatar_color_fondo = "#8D6E63"; }
-	if ($primera_letra == 24) { $avatar_color_fondo = "#FF3D00"; }
-	if ($primera_letra == 25) { $avatar_color_fondo = "#607D8B"; }
-	if ($primera_letra == 26) { $avatar_color_fondo = "#37474F"; }
-	if ($primera_letra == 27) { $avatar_color_fondo = "#26A69A"; }  
+     //genero el color del avatar
+    $avatar_id = $id;
+    $avatar_nombre = "$nombre";
+
+    $pla = ord(strtolower($avatar_nombre[0]));
+    $ula = ord(substr($avatar_nombre, -1));
+    $lca = strlen($avatar_nombre);
+
+    $sca = $pla + $ula + $lca + $avatar_id;
+    $sca = $sca << 5;
     ?>
-
-    
-
 
 	<h2 class="rdm-lista--titulo-largo">Lista doble con avatar de color</h2>
 
@@ -553,7 +533,7 @@
 		<article class="rdm-lista--item-sencillo">
 			<div class="rdm-lista--izquierda-sencillo">
 				<div class="rdm-lista--contenedor">
-					<img class="rdm-lista--avatar-color" avatar="h">
+					<div class="rdm-lista--avatar-color" style="background-color: hsl(<?php echo $sca ?>, 50%, 80%); color: hsl(<?php echo $sca ?>, 80%, 30%);"><i class="zmdi zmdi-face zmdi-hc-2x"></i></div>
 				</div>
 				<div class="rdm-lista--contenedor">
 					<h2 class="rdm-lista--titulo">Item doble</h2>
@@ -568,7 +548,7 @@
 		<article class="rdm-lista--item-sencillo">
 			<div class="rdm-lista--izquierda-sencillo">
 				<div class="rdm-lista--contenedor">
-					<div class="rdm-lista--avatar-color" style="background-color: <?php echo $avatar_color_fondo; ?> ;">H</div>
+					<div class="rdm-lista--avatar-color" style="background-color: hsl(<?php echo $sca ?>, 50%, 80%); color: hsl(<?php echo $sca ?>, 80%, 30%);"><span class="rdm-lista--avatar-texto">H</span></div>
 				</div>
 				<div class="rdm-lista--contenedor">
 					<h2 class="rdm-lista--titulo">Item doble</h2>
@@ -580,7 +560,20 @@
 			</div>
 		</article>
 
-		
+		<article class="rdm-lista--item-sencillo">
+			<div class="rdm-lista--izquierda-sencillo">
+				<div class="rdm-lista--contenedor">
+					<div class="rdm-lista--avatar-color" style="background-color: hsl(<?php echo $sca ?>, 50%, 80%); color: hsl(<?php echo $sca ?>, 80%, 30%);"><span class="rdm-lista--avatar-texto">O</span></div>
+				</div>
+				<div class="rdm-lista--contenedor">
+					<h2 class="rdm-lista--titulo">Item doble</h2>
+					<h2 class="rdm-lista--texto-secundario">Texto secundario</h2>
+				</div>
+			</div>
+			<div class="rdm-lista--derecha">
+				<div class="rdm-lista--contador"><h2 class="rdm-lista--texto-contador">5</h2></div>
+			</div>
+		</article>
 
 	</section>
 
