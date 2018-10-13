@@ -514,7 +514,7 @@
     $nombre = "jose manuel";
     $id = 15;
 
-     //genero el color del avatar
+    //genero el color del avatar
     $avatar_id = $id;
     $avatar_nombre = "$nombre";
 
