@@ -33,44 +33,42 @@
     $variable3 = 3;
      ?>
 
-    <button class="rdm-boton--resaltado" data-toggle="modal" data-target="#dialogo" data-elemento_id="<?php echo ($variable1) ?>">Abrir para <?php echo ($variable1) ?></button>
-    <button class="rdm-boton--resaltado" data-toggle="modal" data-target="#dialogo" data-elemento_id="<?php echo ($variable2) ?>">Abrir para <?php echo ($variable2) ?></button>
-    <button class="rdm-boton--resaltado" data-toggle="modal" data-target="#dialogo" data-elemento_id="<?php echo ($variable3) ?>">Abrir para <?php echo ($variable3) ?></button>
+    <button class="rdm-boton--resaltado" data-toggle="modal" data-target="#dialogo" data-dato1="$local" data-dato2="<?php echo ($variable1) ?>">Abrir para <?php echo ($variable1) ?></button>
+    <button class="rdm-boton--resaltado" data-toggle="modal" data-target="#dialogo" data-dato1="$local" data-dato2="<?php echo ($variable2) ?>">Abrir para <?php echo ($variable2) ?></button>
+    <button class="rdm-boton--resaltado" data-toggle="modal" data-target="#dialogo" data-dato1="$local" data-dato2="<?php echo ($variable3) ?>">Abrir para <?php echo ($variable3) ?></button>
 
 
     <div class="modal" id="dialogo" tabindex="-1" role="dialog">
-
       <div class="modal-dialog modal-dialog-centered" role="document">
-
         <div class="modal-content">
             
             <div class="rdm-tarjeta--primario-largo">
                 <h1 class="rdm-tarjeta--titulo-largo">
-                    Titulo para <span class="modal-texto-titulo"></span>
+                    Agregar componente
                 </h1>
             </div>
 
-            <div class="rdm-tarjeta--cuerpo">
-                <span class="modal-texto-cuerpo"></span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat
-            </div>
-              
+            <div class="rdm-tarjeta--cuerpo">                
                 
-            <input class="modal-input" type="hidden" id="recipient-name">
+                ¿Cuantos <b>K</b> de <b>Harina de trigo</b> deseas agregar a la composición de este producto?
+
+            </div>            
 
             <div class="rdm-tarjeta--acciones-derecha">
-                <button class="rdm-boton--plano" data-dismiss="modal">Cancelar</button>
-                <button class="rdm-boton--plano-resaltado" >Acción</button>
-            </div>            
+                <form action="">
+                  <input class="modal-input" type="hidden" name="id" value=""> 
+
+                  <p><input class="rdm-formularios--input-grande" type="number" id="dinero" name="dinero" value="" placeholder="Cantidad..." ></p>
+
+
+                  <button class="rdm-boton--plano" data-dismiss="modal">Cancelar</button>
+                  <button type="submit" class="rdm-boton--plano-resaltado" name="agregar" value="si">Agregar</button>                  
+                </form>
+            </div>
           
         </div>
-
       </div>
-
-    </div>  
+    </div>
 
 
 
@@ -84,11 +82,12 @@
 <script>
 $('#dialogo').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) 
-  var recipient = button.data('elemento_id') 
+  var dato1 = button.data('dato1') 
+  var dato2 = button.data('dato2') 
   var modal = $(this)
-  modal.find('.modal-texto-titulo').text('Titulo para ' + recipient + '?')
-  modal.find('.modal-texto-cuerpo').text('¿Deseas eliminar  ' + recipient + '?')
-  modal.find('.modal-input').val(recipient)
+  modal.find('.modal-texto-titulo').text('' + dato1 + '')
+  modal.find('.modal-texto-cuerpo').text('' + dato1 + '')
+  modal.find('.modal-input').val(dato2)
 })
 </script>
 	

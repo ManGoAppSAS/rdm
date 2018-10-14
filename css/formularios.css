@@ -127,6 +127,11 @@ label{
     text-align: center;
 }
 
+.rdm-formularios--input-mediano{
+    font-size: 1.25em;
+    text-align: center;
+}
+
 .rdm-formularios--input-cantidad{
     text-align: center;
     width: 8em;
